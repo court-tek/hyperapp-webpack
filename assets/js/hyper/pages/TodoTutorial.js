@@ -13,7 +13,7 @@ const jsx = jsxify(h) /** @jsx jsx */
 export default function TodoTutorial(props) {
     return (
         <Page>
-            <section class="template">
+            <section class="todo">
                 <SiteNavigation />
                 <div class="container">
                     <h1>Template</h1>
