@@ -1,0 +1,29 @@
+.todo {
+    padding: 20px;
+    /* flex stuff */
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+
+    &__header {
+        font-size: 5rem;
+        font-weight: 500;
+        text-align: center;
+        margin-bottom: 20px;
+        background: #00fff0;  /* fallback for old browsers */
+        background: linear-gradient(to right, #0083fe, #00fff0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        -webkit-background-clip: text;
+        color: transparent;
+        background-size: 200%;
+
+        animation: gradient 14s ease-in infinite alternate;
+        @keyframes gradient {
+            0% {
+                background-position: 0%;
+            }
+            100% {
+                background-position: 100%;
+            }
+        }
+    }
+}
