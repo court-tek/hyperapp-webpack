@@ -13,7 +13,7 @@ export default function Welcome(props) {
         <Page>
             <section class="welcome">
                 <SiteNavigation />
-                Hello World
+                <h1 class="welcome__title">hyperapp</h1>
             </section>
         </Page>
     )   

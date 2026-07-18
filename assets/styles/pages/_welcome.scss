@@ -4,4 +4,26 @@
     background: linear-gradient(to left, #0A2A88, #59CDE9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: 400% 400%;
     background-position: 400%;
+
+    &__title {
+        color: #fff;
+        font-weight: 300;
+        font-size: 4rem;
+        letter-spacing: 1.2rem;
+        text-align: center;
+    }
+    
+    /* animation things */
+    animation: gradient 15s ease infinite;
+    @keyframes gradient {
+        0% {
+            background-position: 0%;
+        }
+        50% {
+            background-position: 100%;
+        }
+        100% {
+            background-position: 0%;
+        }
+    } 
 }
