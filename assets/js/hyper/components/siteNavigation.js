@@ -4,7 +4,7 @@ import Welcome from "../pages/Welcome.js";
 import { HyperappLogo } from "./hyperappLogo.js";
 import TimerTutorial from "../pages/TimerTutorial.js";
 import TodoTutorial from "../pages/TodoTutorial.js";
-import About from "../pages/TodoTutorial.js";
+import AboutPage from "../pages/About.js";
 const jsx = jsxify(h) /** @jsx jsx */
 
 /*
@@ -35,7 +35,7 @@ export const ROUTES = {
     '#': Welcome,
     '#timer': TimerTutorial,
     '#todo': TodoTutorial,
-    '#about': About,
+    '#about': AboutPage,
 }
 
 {/* <nav class="navbar">
