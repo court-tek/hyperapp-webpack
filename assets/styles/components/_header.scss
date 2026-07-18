@@ -1,0 +1,25 @@
+.header {
+    background-color: oklch(14.753% 0.08478 287.602);
+    padding: 15px;
+    /* flex things */ 
+    display: flex;
+    justify-content: space-between;
+
+    &__nav {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        padding: 10px 20px;
+    }
+
+    &__u-list {
+        /* flex things */ 
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+}

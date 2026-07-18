@@ -1,0 +1,30 @@
+@use './colors' as *;
+@use './variables' as *;
+@use "sass:map";
+
+// Media Query
+@mixin mq($key) {
+    $size: map.get($kevin-breakpoints, $key);
+
+    @media only screen and (min-width: $size) {
+        @content;
+    }
+}
+// gradients
+@mixin gradient-pizelex {
+    background: var(--clr-teal-blue-900); /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, var(--clr-geraldine-400), var(--clr-teal-blue-900)); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, var(--clr-geraldine-400), var(--clr-teal-blue-900)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin gradient-hyper-blue {
+    background: var(--clr-sky-blue-300);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, var(--clr-resolution-blue-900), var(--clr-sky-blue-300));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, var(--clr-resolution-blue-900), #59CDE9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+@mixin gradient-by-design {
+    background: var(--clr-dodger-blue-500);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, var(--clr-red-ribbon-500), var(--clr-dodger-blue-500));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, var(--clr-red-ribbon-500), var(--clr-dodger-blue-500)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

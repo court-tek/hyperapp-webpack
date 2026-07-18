@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$typography: (
+    font-sizes: (
+        2xs: 0.75rem,
+        xs: 0.813rem,
+        s: 0.875rem,
+        m: 1rem, // H6
+        l: 1.125rem, // H5
+        xl: 1.25rem, // H4
+        2xl: 1.5rem, // H3
+        3xl: 1.75rem, // H2
+        4xl: 2rem, // H1
+        5xl: 2.25rem,
+        6xl: 2.625rem
+    ),
+    font-family: (
+        default: 'Arial, sans-serif',
+    ),
+    line-heights: (
+        xs: 1,
+        s: 1.15,
+        m: 1.35,
+        l: 1.5,
+        xl: 1.62,
+        2xl: 1.75
+    ),
+)

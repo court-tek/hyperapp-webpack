@@ -1,0 +1,18 @@
+@use './abstracts/' as *;
+@use './base/' as *;
+@use './components/' as *;
+@use './pages/' as *;
+
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    line-height: 1;
+}
+
+.container {
+    width: 100%;
+    max-width: 976px;
+}
+
+

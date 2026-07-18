@@ -1,0 +1,24 @@
+@use '../abstracts/' as *;
+@use './type-scale' as *;
+
+:root {
+  @each $key, $crayonBox in $colors {
+    @each $colorKey, $hue in $crayonBox {
+      --clr-#{$colorKey}: #{$hue};
+    }
+  }
+  
+  @each $screen-size, $font-size in $type-scale {
+    @if $screen-size == small {
+      @each $size, $value in $font-size {
+        --fs-#{$size}: #{$value};
+      }
+    } @else {
+        @include mq(small) {
+          @each $size, $value in $font-size {
+            --fs-#{$size}: #{$value};
+          }
+        }
+    }
+  }
+}
