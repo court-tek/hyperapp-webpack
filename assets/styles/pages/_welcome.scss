@@ -12,6 +12,11 @@
         letter-spacing: 1.2rem;
         text-align: center;
     }
+
+    /* flex things */
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     
     /* animation things */
     animation: gradient 15s ease infinite;

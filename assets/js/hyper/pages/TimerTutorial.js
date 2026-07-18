@@ -44,8 +44,8 @@ export default function TimerTutorial(props) {
     const { mode, remainingTime } = props;
     return (
         <Page>
+            <SiteNavigation />
             <section class="timer">
-                <SiteNavigation />
                 <button onclick={mode === "stopped" ? Start : Cancel}>
                     {mode === "stopped" ? "START" : "CANCEL"}
                 </button>

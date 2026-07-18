@@ -11,8 +11,8 @@ const jsx = jsxify(h) /** @jsx jsx */
 export default function Welcome(props) {
     return (
         <Page>
+            <SiteNavigation />
             <section class="welcome">
-                <SiteNavigation />
                 <h1 class="welcome__title">hyperapp</h1>
             </section>
         </Page>

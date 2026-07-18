@@ -13,12 +13,9 @@ const jsx = jsxify(h) /** @jsx jsx */
 export default function AboutPage(props) {
     return (
         <Page>
+            <SiteNavigation />
             <section class="template">
-                <SiteNavigation />
-                <div class="container">
-                    <h1>About</h1>
-                    <p>About pagecontent goes here</p>
-                </div>
+                <p>About pagecontent goes here</p>
             </section>
         </Page>
     )   
