@@ -26,11 +26,17 @@ export default function TodoTutorial(props) {
             <SiteNavigation />
             <section class="todo">
                 <h1 class="todo__header">To do list</h1>
-                <input class="todo__input" type="text" oninput={NewValue} /> 
-                <ul class="todo__unordered-list">
-                    {todos.map((todo) => <li class="todo__list-item">{todo}</li> )}
-                </ul>
-                <button class="todo__submit-btn" onclick={AddValue}>new!</button>
+                
+                <div class="todo__content-area">
+                    <div class="todo__form-group">
+                        <input class="todo__input" type="text" oninput={NewValue} />
+                        <button class="todo__submit-btn" onclick={AddValue}>new!</button>
+                    </div>
+
+                    <ul class="todo__unordered-list">
+                        {todos.map((todo) => <li class="todo__list-item">{todo}</li> )}
+                    </ul>
+                </div>
             </section>
         </Page>
     )   

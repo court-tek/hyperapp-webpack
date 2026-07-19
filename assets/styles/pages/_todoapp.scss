@@ -26,4 +26,38 @@
             }
         }
     }
+
+    &__content-area {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 600px;
+        gap: 1rem;
+    }
+
+    &__form-group {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    &__input {
+        padding: 12px;
+    }
+
+    &__submit-btn {
+        background-color: oklch(72.697% 0.17416 9.785);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+
+    &__unordered-list {
+        background-color: oklch(62.076% 0.20626 255.262);
+    }
 }
