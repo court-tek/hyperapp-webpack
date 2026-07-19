@@ -1,5 +1,5 @@
 import { h, text } from "hyperapp";
-import { jsxify } from "../config/utili     ties.js";
+import { jsxify } from "../config/utilities.js";
 const jsx = jsxify(h) /** @jsx jsx */
 
 /*
