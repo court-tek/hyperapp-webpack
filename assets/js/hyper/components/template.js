@@ -8,7 +8,7 @@ const jsx = jsxify(h) /** @jsx jsx */
 /*
     Template page to create new pages quickly
 */
-export default function nameHere({}) {
+export default function NameHere(props) {
     return (
         <div className="template">
             <h1>This is a template.</h1>
